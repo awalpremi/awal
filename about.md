@@ -4,4 +4,15 @@ title: About
 ---
 # About page
 
-prrrrp
+
+
+```
+          __
+  w  c(   /'>
+   \  (  //
+    ) )//
+   / /_/
+  / / /
+```
+
+yw tuned for more exciting content!
