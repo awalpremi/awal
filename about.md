@@ -15,4 +15,13 @@ title: About
   / / /
 ```
 
-yw tuned for more exciting content!
+
+```
+    /\
+    /  \
+   /    \
+  /______\
+ /        \
+/          \
+```
+
