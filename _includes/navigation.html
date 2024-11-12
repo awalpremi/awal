@@ -1,7 +1,13 @@
-<nav>
+<nav class="newspaper-nav">
+  <div class="nav-title">REPORT AI</div>
+  <div class="nav-links">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+      <a href="{{ item.link }}" class="nav-item {% if page.url == item.link %}active{% endif %}">
         {{ item.name }}
       </a>
+      {% if forloop.last == false %}
+        <span class="nav-separator">|</span>
+      {% endif %}
     {% endfor %}
-  </nav>
+  </div>
+</nav>

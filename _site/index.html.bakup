@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+</head>
+  <body>
+    <nav class="newspaper-nav">
+  <div class="nav-title">REPORT AI</div>
+  <div class="nav-links">
+    
+      <a href="/" class="nav-item ">
+        Home
+      </a>
+      
+        <span class="nav-separator">|</span>
+      
+    
+      <a href="/about.html" class="nav-item ">
+        About
+      </a>
+      
+    
+  </div>
+</nav>
+
+
+    <h1>hello world!</h1>
+  </body>
+</html>

@@ -4,6 +4,11 @@ title: About
 ---
 # About page
 
+{:.hero-section}
+## hhhhh
+
+[CTA](#signup){: .cta-button}
+
 
 
 ```
