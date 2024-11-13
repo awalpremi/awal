@@ -1,9 +1,25 @@
-gem install jekyll bundler
-update gemfile to have what you need like gem "jekyll"
-install everything by running bundle
+# Jekyll Installation and Usage Guide
 
+1. Install Jekyll and Bundler gems:
+   ```bash
+   gem install jekyll bundler
+   ```
 
-Since Jekyll is a static site generator, it has to build the site before we can view it. Run either of the following commands to build your site:
+2. Update your Gemfile with required dependencies:
+   ```ruby
+   gem "jekyll"
+   ```
 
-jekyll build - Builds the site and outputs a static site to a directory called _site.
-jekyll serve - Does jekyll build and runs it on a local web server at http://localhost:4000, rebuilding the site any time you make a change.
+3. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+## Building Your Site
+
+Jekyll needs to build the site before you can view it. Use one of these commands:
+
+* `jekyll build`: Builds the site and outputs to `_site` directory
+* `jekyll serve`: Builds and serves the site at `http://localhost:4000`, auto-rebuilding on changes
+
+To ensure you're using the correct versions, prefix commands with `bundle exec`:
