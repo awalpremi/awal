@@ -48,3 +48,10 @@ title: Post $i
 Content for Post $i goes here.
 EOL
 done
+
+
+remove gems rm -rf .bundle Gemfile.lock _site
+
+misc
+kill process on 4000 lsof -i :4000
+kill -9 <PID>
