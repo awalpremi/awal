@@ -4,7 +4,15 @@
     {% for item in site.data.navigation %}
       {% assign page_url = page.url | remove: '/' | remove: '.html' %}
       {% assign item_url = item.link | remove: '/' | remove: '.html' %}
-      <a href="{{ item.link }}" class="nav-item {% if page_url == item_url %}active{% endif %}">
+
+      {% assign is_active = false %}
+      {% if page_url == item_url %}
+        {% assign is_active = true %}
+      {% elsif page.layout == "post" and item_url == "blog" %}
+        {% assign is_active = true %}
+      {% endif %}
+
+      <a href="{{ item.link }}" class="nav-item {% if is_active %}active{% endif %}">
         {{ item.name }}
       </a>
       {% unless forloop.last %}
