@@ -2,12 +2,14 @@
   <div class="nav-title">REPORT AI</div>
   <div class="nav-links">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" class="nav-item {% if page.url == item.link %}active{% endif %}">
+      {% assign page_url = page.url | remove: '/' | remove: '.html' %}
+      {% assign item_url = item.link | remove: '/' | remove: '.html' %}
+      <a href="{{ item.link }}" class="nav-item {% if page_url == item_url %}active{% endif %}">
         {{ item.name }}
       </a>
-      {% if forloop.last == false %}
+      {% unless forloop.last %}
         <span class="nav-separator">|</span>
-      {% endif %}
+      {% endunless %}
     {% endfor %}
   </div>
 </nav>

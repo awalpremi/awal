@@ -2,9 +2,11 @@
 layout: default  # or whatever layout you want to use
 title: "Home"
 permalink: /
+my_number: 5
 ---
 
 # Home
+## {{ page.my_number }} {{ page.title | uppercase }}
 
 ## this is heading 2
 
