@@ -8,6 +8,8 @@ my_number: 5
 # Home
 ## {{ page.my_number }} {{ page.title | uppercase }}
 
+Last updated: {{ site.time | date: '%B %d, %Y at %I:%M %p' }}
+
 ## this is heading 2
 
 ### This is heading 3
