@@ -1,8 +1,25 @@
+title: "Awal Premi"
+description: "Whatever jekyll website"
+url: "https://thepremi.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-sass:
-  sass_dir: _sass
-  style: compressed
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
